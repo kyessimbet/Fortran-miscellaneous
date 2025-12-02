@@ -1,3 +1,13 @@
+"""
+
+This program parallelizes the computation of the Mandelbrot fractal using MPI. It divides the grid among processes, computes escape times for each point, and outputs a data file (map.dat) that can be visualized to produce the Mandelbrot set image
+
+
+Author: Kamilya Yessimbet
+
+
+"""
+
 include 'mpif.h'
 DOUBLE PRECISION :: xmin=-2, xmax=1, ymin=-1.5, ymax=1.5, h=0.001, x, y
 COMPLEX*16 :: f, f0
